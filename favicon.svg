@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Cloudstead">
+  <rect width="64" height="64" fill="#070a12"/>
+  <!-- diamond mark, matches .brand-mark shape and brand color -->
+  <polygon points="32,10 54,32 32,54 10,32" fill="#6158FF"/>
+</svg>
