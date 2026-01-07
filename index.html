@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cloudstead — Modern IT & Cloud Infrastructure Services</title>
+    <meta
+      name="description"
+      content="Cloudstead provides modern IT infrastructure services and bespoke cloud solutions across AWS, Azure, and Google Cloud. Analysis-first. Secure by design."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Background Orbs -->
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+    <div class="bg-orb orb-3" aria-hidden="true"></div>
+
+    <!-- Top Nav -->
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="Cloudstead home">
+          <span class="brand-mark" aria-hidden="true">◈</span>
+          <span class="brand-text">Cloudstead</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#case-studies">Case studies</a>
+          <a href="#security">Security</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="#contact">Talk to an architect</a>
+          <button class="btn btn-icon" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+            <span id="themeIcon" aria-hidden="true">☾</span>
+          </button>
+          <button class="btn btn-icon mobile-menu" id="menuBtn" aria-label="Open menu" title="Menu">
+            <span aria-hidden="true">≡</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="container mobile-nav" id="mobileNav" hidden>
+        <a href="#services">Services</a>
+        <a href="#approach">Approach</a>
+        <a href="#case-studies">Case studies</a>
+        <a href="#security">Security</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <main id="top" class="main">
+      <section class="container hero">
+        <div class="hero-left">
+          <div class="pill">
+            <span class="dot"></span>
+            Multi-cloud infrastructure • AWS • Azure • GCP
+          </div>
+
+          <h1>
+            Build secure, scalable cloud infrastructure—
+            <span class="grad">without the complexity.</span>
+          </h1>
+
+          <p class="subhead">
+            Cloudstead is an IT services partner specializing in cloud infrastructure, modernization,
+            and bespoke solutions. We start with analysis, align with business needs, and deliver
+            reliable systems you can run with confidence.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Get a free discovery call</a>
+            <a class="btn btn-secondary" href="#services">Explore services</a>
+          </div>
+
+          <div class="partner-strip" aria-label="Cloud partners">
+            <div class="partner">
+              <span class="badge">AWS</span>
+              <span class="muted">Cloud-ready architectures</span>
+            </div>
+            <div class="partner">
+              <span class="badge">Azure</span>
+              <span class="muted">Enterprise integration</span>
+            </div>
+            <div class="partner">
+              <span class="badge">GCP</span>
+              <span class="muted">Data & platform engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <div class="hero-card-top">
+              <div class="mini-title">What you get</div>
+              <div class="chip">Analysis-first</div>
+              <div class="chip">Secure-by-design</div>
+              <div class="chip">Automation</div>
+            </div>
+
+            <div class="metrics">
+              <div class="metric">
+                <div class="metric-val">↓ 30–60%</div>
+                <div class="metric-label">Ops noise reduction</div>
+              </div>
+              <div class="metric">
+                <div class="metric-val">↑ 2–4×</div>
+                <div class="metric-label">Delivery velocity</div>
+              </div>
+              <div class="metric">
+                <div class="metric-val">24/7</div>
+                <div class="metric-label">Monitoring-ready</div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="list">
+              <div class="list-item">
+                <span class="list-icon" aria-hidden="true">✓</span>
+                <div>
+                  <div class="list-title">Modern landing zone</div>
+                  <div class="muted">Identity, networking, policies, and guardrails.</div>
+                </div>
+              </div>
+              <div class="list-item">
+                <span class="list-icon" aria-hidden="true">✓</span>
+                <div>
+                  <div class="list-title">Infrastructure as Code</div>
+                  <div class="muted">Repeatable, reviewable, compliant deployments.</div>
+                </div>
+              </div>
+              <div class="list-item">
+                <span class="list-icon" aria-hidden="true">✓</span>
+                <div>
+                  <div class="list-title">Observability & reliability</div>
+                  <div class="muted">Dashboards, alerts, SLOs, and incident playbooks.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-card-actions">
+              <a class="btn btn-ghost" href="#approach">See our approach</a>
+              <a class="btn btn-primary" href="#contact">Request a proposal</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust / Logos row -->
+      <section class="container trust">
+        <div class="trust-row">
+          <div class="trust-item">
+            <div class="trust-title">Designed for</div>
+            <div class="trust-text">SMBs • Startups • Enterprise teams</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-title">Focus</div>
+            <div class="trust-text">Infra • DevOps • Security • Cost optimization</div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-title">Delivery</div>
+            <div class="trust-text">Fast, documented, production-ready</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="container section">
+        <div class="section-head">
+          <h2>Services</h2>
+          <p class="muted">
+            Practical services that move your business forward—whether you’re migrating,
+            modernizing, or stabilizing operations.
+          </p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">☁</div>
+            <h3>Cloud Infrastructure</h3>
+            <p class="muted">
+              Landing zones, networking, identity, governance, and secure foundations across
+              AWS, Azure, and GCP.
+            </p>
+            <ul class="bullets">
+              <li>VPC/VNet design & segmentation</li>
+              <li>IAM/Entra ID strategy</li>
+              <li>Private connectivity & VPN</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⚙</div>
+            <h3>DevOps & Automation</h3>
+            <p class="muted">
+              CI/CD, GitOps, Infrastructure as Code, and automated quality controls to ship
+              faster with less risk.
+            </p>
+            <ul class="bullets">
+              <li>Terraform, pipelines, policy as code</li>
+              <li>Golden paths & templates</li>
+              <li>Release governance</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🛡</div>
+            <h3>Security & Compliance</h3>
+            <p class="muted">
+              Secure-by-design patterns, risk reduction, and practical controls aligned to your
+              environment and constraints.
+            </p>
+            <ul class="bullets">
+              <li>Threat modeling & guardrails</li>
+              <li>Secrets, keys, and access reviews</li>
+              <li>Audit-ready documentation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📈</div>
+            <h3>Cost & Performance</h3>
+            <p class="muted">
+              Improve reliability and reduce spend by tuning usage, right-sizing workloads, and
+              removing waste.
+            </p>
+            <ul class="bullets">
+              <li>Cost baselining & FinOps dashboards</li>
+              <li>Right-sizing & scheduling</li>
+              <li>Architecture efficiency reviews</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🧩</div>
+            <h3>Bespoke Solutions</h3>
+            <p class="muted">
+              Custom designs built around your business needs—after analysis, not guesswork.
+            </p>
+            <ul class="bullets">
+              <li>Reference architecture + roadmap</li>
+              <li>Proof of concept to production</li>
+              <li>Documentation & handover</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🔭</div>
+            <h3>Observability & Reliability</h3>
+            <p class="muted">
+              Visibility you can trust: logs, metrics, traces, SLOs, and incident response
+              playbooks.
+            </p>
+            <ul class="bullets">
+              <li>Monitoring & alerting strategy</li>
+              <li>Dashboards & runbooks</li>
+              <li>On-call readiness</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Approach -->
+      <section id="approach" class="container section">
+        <div class="section-head">
+          <h2>How we work</h2>
+          <p class="muted">
+            A simple, proven approach: understand first, design second, deliver third—and
+            support what we ship.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="step">
+            <div class="step-num">01</div>
+            <div class="step-body">
+              <h3>Discovery & Analysis</h3>
+              <p class="muted">
+                We identify goals, constraints, risks, and success metrics. You’ll get a clear
+                plan, not a pile of tools.
+              </p>
+              <div class="tags">
+                <span class="tag">workshops</span>
+                <span class="tag">current-state review</span>
+                <span class="tag">cost & risk baseline</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">02</div>
+            <div class="step-body">
+              <h3>Architecture & Design</h3>
+              <p class="muted">
+                We design a solution aligned to your needs—secure, scalable, and maintainable—
+                with practical tradeoffs documented.
+              </p>
+              <div class="tags">
+                <span class="tag">reference architecture</span>
+                <span class="tag">IaC plan</span>
+                <span class="tag">security controls</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">03</div>
+            <div class="step-body">
+              <h3>Build & Implement</h3>
+              <p class="muted">
+                We implement using automation and best practices. You get working systems,
+                tested and ready for production.
+              </p>
+              <div class="tags">
+                <span class="tag">CI/CD</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">platform engineering</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num">04</div>
+            <div class="step-body">
+              <h3>Operate & Improve</h3>
+              <p class="muted">
+                We help you run it: monitoring, documentation, and continuous improvements so
+                it stays reliable over time.
+              </p>
+              <div class="tags">
+                <span class="tag">observability</span>
+                <span class="tag">runbooks</span>
+                <span class="tag">optimization</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case studies -->
+      <section id="case-studies" class="container section">
+        <div class="section-head">
+          <h2>Case studies</h2>
+          <p class="muted">Examples of outcomes we deliver. Replace these with your real wins.</p>
+        </div>
+
+        <div class="grid cards-2">
+          <article class="card">
+            <div class="kicker">Modernization</div>
+            <h3>Legacy to cloud-native platform</h3>
+            <p class="muted">
+              Re-architected a monolith into a modular platform with IaC, CI/CD, and observability.
+            </p>
+            <div class="mini-metrics">
+              <div><strong>4×</strong><span class="muted">deploy frequency</span></div>
+              <div><strong>↓40%</strong><span class="muted">incident volume</span></div>
+              <div><strong>↓25%</strong><span class="muted">cloud spend</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="kicker">Security</div>
+            <h3>Secure landing zone + guardrails</h3>
+            <p class="muted">
+              Implemented standardized cloud foundations with policies, access controls, and audit-ready documentation.
+            </p>
+            <div class="mini-metrics">
+              <div><strong>90d</strong><span class="muted">audit readiness</span></div>
+              <div><strong>0</strong><span class="muted">critical findings</span></div>
+              <div><strong>↑</strong><span class="muted">developer velocity</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Security -->
+      <section id="security" class="container section">
+        <div class="section-head">
+          <h2>Security & reliability built in</h2>
+          <p class="muted">
+            Security isn’t an add-on. We build guardrails that help teams ship safely.
+          </p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="card subtle">
+            <h3>Principle of least privilege</h3>
+            <p class="muted">Role-based access, short-lived credentials, and regular reviews.</p>
+          </article>
+
+          <article class="card subtle">
+            <h3>Defense in depth</h3>
+            <p class="muted">Network segmentation, WAF patterns, and secure defaults.</p>
+          </article>
+
+          <article class="card subtle">
+            <h3>Audit-ready</h3>
+            <p class="muted">Traceability, change control, and documentation as a first-class output.</p>
+          </article>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3>Need a tailored solution?</h3>
+            <p class="muted">
+              Tell us your goals and constraints. We’ll propose a plan that fits your business and your team.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="#contact">Start the conversation</a>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="container section">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Send a message and we’ll respond within 1 business day.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Let’s build something resilient.</h3>
+            <p class="muted">
+              Share a quick overview and we’ll suggest next steps: discovery workshop, architecture review, or implementation plan.
+            </p>
+
+            <div class="contact-points">
+              <div class="contact-point"><span aria-hidden="true">✉</span> hello@cloudstead.example</div>
+              <div class="contact-point"><span aria-hidden="true">☎</span> (000) 000-0000</div>
+              <div class="contact-point"><span aria-hidden="true">⌁</span> Remote-first • US / Global</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="muted small">
+              Prefer a quick call? Use the button to draft an email with your preferred times.
+            </div>
+            <a class="btn btn-secondary" id="emailBtn" href="#">Draft an email</a>
+          </div>
+
+          <form class="card form" onsubmit="return false;">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" required />
+            </div>
+
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" placeholder="Company name" autocomplete="organization" />
+            </div>
+
+            <div class="field">
+              <label for="message">What do you need help with?</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Example: We need an AWS landing zone, IaC, CI/CD, and monitoring for a new app..."
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn btn-primary" id="fakeSubmit">Send message</button>
+            <div class="muted small" id="formNote">
+              This is a static form UI. To receive submissions, connect Netlify Forms, Formspree, or a serverless endpoint.
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div class="muted small">© <span id="year"></span> Cloudstead. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
