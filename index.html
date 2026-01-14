@@ -3,26 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cloudstead — Modern IT & Cloud Infrastructure Services</title>
+    <title>Cloudstead Solutions — Your Technology Solutions</title>
     <meta
       name="description"
-      content="Cloudstead provides modern IT infrastructure services and bespoke cloud solutions across AWS, Azure, and Google Cloud. Analysis-first. Secure by design."
+      content="Cloudstead Solutions provides in-office technology services, cloud services (Microsoft, Google, AWS), monitoring, backups, and custom solutions for small and medium businesses."
     />
 
-    <!-- FAVICONS -->
-    <!-- SVG favicon (modern browsers) -->
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <!-- fallback/legacy -->
-    <link rel="alternate icon" href="/favicon.ico" />
-    <!-- Safari pinned tab (uses mask-icon) -->
-    <link rel="mask-icon" href="/favicon.svg" color="#6158FF" />
+    <!-- Favicons (optional - add your actual files in same folder as index.html) -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#070a12" />
-    <!-- /FAVICONS -->
 
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <!-- Fixed gradient layer (prevents banding) -->
+    <div class="bg-gradient" aria-hidden="true"></div>
+
     <!-- Background Orbs -->
     <div class="bg-orb orb-1" aria-hidden="true"></div>
     <div class="bg-orb orb-2" aria-hidden="true"></div>
@@ -33,19 +33,23 @@
       <div class="container nav">
         <a class="brand" href="#top" aria-label="Cloudstead home">
           <span class="brand-mark" aria-hidden="true">◈</span>
-          <span class="brand-text">Cloudstead</span>
+
+          <!-- Logo + Tagline -->
+          <span class="brand-lockup">
+            <span class="brand-text">Cloudstead</span>
+            <span class="brand-tagline">Your Technology Solutions</span>
+          </span>
         </a>
 
         <nav class="nav-links" aria-label="Primary navigation">
           <a href="#services">Services</a>
-          <a href="#approach">Approach</a>
-          <a href="#case-studies">Case studies</a>
-          <a href="#security">Security</a>
+          <a href="#who">Who we work with</a>
+          <a href="#how">How we work</a>
           <a href="#contact">Contact</a>
         </nav>
 
         <div class="nav-cta">
-          <a class="btn btn-ghost" href="#contact">Talk to an architect</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
           <button class="btn btn-icon" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
             <span id="themeIcon" aria-hidden="true">☾</span>
           </button>
@@ -58,50 +62,48 @@
       <!-- Mobile menu -->
       <div class="container mobile-nav" id="mobileNav" hidden>
         <a href="#services">Services</a>
-        <a href="#approach">Approach</a>
-        <a href="#case-studies">Case studies</a>
-        <a href="#security">Security</a>
+        <a href="#who">Who we work with</a>
+        <a href="#how">How we work</a>
         <a href="#contact">Contact</a>
       </div>
     </header>
 
-    <!-- Hero -->
     <main id="top" class="main">
+      <!-- Hero -->
       <section class="container hero">
         <div class="hero-left">
           <div class="pill">
             <span class="dot"></span>
-            Multi-cloud infrastructure • AWS • Azure • GCP
+            In-office IT • Cloud • Monitoring • Backups • Custom solutions
           </div>
 
           <h1>
-            Build secure, scalable cloud infrastructure—
-            <span class="grad">without the complexity.</span>
+            Technology that works—
+            <span class="grad">so your business can focus.</span>
           </h1>
 
           <p class="subhead">
-            Cloudstead is an IT services partner specializing in cloud infrastructure, modernization,
-            and bespoke solutions. We start with analysis, align with business needs, and deliver
-            reliable systems you can run with confidence.
+            <strong>Cloudstead Solutions</strong> helps small and medium businesses design, build, and support reliable
+            technology environments—whether you operate from an office, have remote employees, or both.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Get a free discovery call</a>
-            <a class="btn btn-secondary" href="#services">Explore services</a>
+            <a class="btn btn-primary" href="#contact">Start a discovery conversation</a>
+            <a class="btn btn-secondary" href="#services">View services</a>
           </div>
 
-          <div class="partner-strip" aria-label="Cloud partners">
+          <div class="partner-strip" aria-label="Cloud platforms">
+            <div class="partner">
+              <span class="badge">Microsoft</span>
+              <span class="muted">Microsoft 365 • Identity • Devices</span>
+            </div>
+            <div class="partner">
+              <span class="badge">Google</span>
+              <span class="muted">Workspace • Security • Admin</span>
+            </div>
             <div class="partner">
               <span class="badge">AWS</span>
-              <span class="muted">Cloud-ready architectures</span>
-            </div>
-            <div class="partner">
-              <span class="badge">Azure</span>
-              <span class="muted">Enterprise integration</span>
-            </div>
-            <div class="partner">
-              <span class="badge">GCP</span>
-              <span class="muted">Data & platform engineering</span>
+              <span class="muted">Cloud hosting • Networks • Backups</span>
             </div>
           </div>
         </div>
@@ -110,23 +112,23 @@
           <div class="hero-card">
             <div class="hero-card-top">
               <div class="mini-title">What you get</div>
-              <div class="chip">Analysis-first</div>
+              <div class="chip">Simple & clear</div>
+              <div class="chip">Less downtime</div>
               <div class="chip">Secure-by-design</div>
-              <div class="chip">Automation</div>
             </div>
 
             <div class="metrics">
               <div class="metric">
-                <div class="metric-val">↓ 30–60%</div>
-                <div class="metric-label">Ops noise reduction</div>
+                <div class="metric-val">↓ Downtime</div>
+                <div class="metric-label">Monitoring + proactive fixes</div>
               </div>
               <div class="metric">
-                <div class="metric-val">↑ 2–4×</div>
-                <div class="metric-label">Delivery velocity</div>
+                <div class="metric-val">↑ Security</div>
+                <div class="metric-label">Better controls & visibility</div>
               </div>
               <div class="metric">
-                <div class="metric-val">24/7</div>
-                <div class="metric-label">Monitoring-ready</div>
+                <div class="metric-val">Fast</div>
+                <div class="metric-label">Clear proposals & timelines</div>
               </div>
             </div>
 
@@ -136,48 +138,30 @@
               <div class="list-item">
                 <span class="list-icon" aria-hidden="true">✓</span>
                 <div>
-                  <div class="list-title">Modern landing zone</div>
-                  <div class="muted">Identity, networking, policies, and guardrails.</div>
+                  <div class="list-title">In-office technology support</div>
+                  <div class="muted">Networking, devices, printers, cameras, access control.</div>
                 </div>
               </div>
               <div class="list-item">
                 <span class="list-icon" aria-hidden="true">✓</span>
                 <div>
-                  <div class="list-title">Infrastructure as Code</div>
-                  <div class="muted">Repeatable, reviewable, compliant deployments.</div>
+                  <div class="list-title">Cloud services</div>
+                  <div class="muted">Microsoft, Google, AWS—aligned to your needs.</div>
                 </div>
               </div>
               <div class="list-item">
                 <span class="list-icon" aria-hidden="true">✓</span>
                 <div>
-                  <div class="list-title">Observability & reliability</div>
-                  <div class="muted">Dashboards, alerts, SLOs, and incident playbooks.</div>
+                  <div class="list-title">Backups & monitoring</div>
+                  <div class="muted">Less downtime and better recovery when needed.</div>
                 </div>
               </div>
             </div>
 
             <div class="hero-card-actions">
-              <a class="btn btn-ghost" href="#approach">See our approach</a>
-              <a class="btn btn-primary" href="#contact">Request a proposal</a>
+              <a class="btn btn-ghost" href="#how">See how we work</a>
+              <a class="btn btn-primary" href="#contact">Contact us</a>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Trust / Logos row -->
-      <section class="container trust">
-        <div class="trust-row">
-          <div class="trust-item">
-            <div class="trust-title">Designed for</div>
-            <div class="trust-text">SMBs • Startups • Enterprise teams</div>
-          </div>
-          <div class="trust-item">
-            <div class="trust-title">Focus</div>
-            <div class="trust-text">Infra • DevOps • Security • Cost optimization</div>
-          </div>
-          <div class="trust-item">
-            <div class="trust-title">Delivery</div>
-            <div class="trust-text">Fast, documented, production-ready</div>
           </div>
         </div>
       </section>
@@ -187,104 +171,137 @@
         <div class="section-head">
           <h2>Services</h2>
           <p class="muted">
-            Practical services that move your business forward—whether you’re migrating,
-            modernizing, or stabilizing operations.
+            From office technology to cloud platforms—plus monitoring, backups, and custom solutions built around your business.
           </p>
         </div>
 
         <div class="grid cards-3">
           <article class="card">
-            <div class="card-icon" aria-hidden="true">☁</div>
-            <h3>Cloud Infrastructure</h3>
+            <div class="card-icon" aria-hidden="true">🏢</div>
+            <h3>In Office</h3>
             <p class="muted">
-              Landing zones, networking, identity, governance, and secure foundations across
-              AWS, Azure, and GCP.
+              All the technology items in your office—setup, maintenance, and improvement.
             </p>
             <ul class="bullets">
-              <li>VPC/VNet design & segmentation</li>
-              <li>IAM/Entra ID strategy</li>
-              <li>Private connectivity & VPN</li>
+              <li>Cameras & physical security</li>
+              <li>Keypad / door access systems</li>
+              <li>Desktops, laptops, printers</li>
+              <li>Networking (Wi-Fi, switches, firewall)</li>
             </ul>
           </article>
 
           <article class="card">
-            <div class="card-icon" aria-hidden="true">⚙</div>
-            <h3>DevOps & Automation</h3>
+            <div class="card-icon" aria-hidden="true">☁️</div>
+            <h3>In the Cloud</h3>
             <p class="muted">
-              CI/CD, GitOps, Infrastructure as Code, and automated quality controls to ship
-              faster with less risk.
+              Cloud platforms configured for productivity, security, and reliability.
             </p>
             <ul class="bullets">
-              <li>Terraform, pipelines, policy as code</li>
-              <li>Golden paths & templates</li>
-              <li>Release governance</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🛡</div>
-            <h3>Security & Compliance</h3>
-            <p class="muted">
-              Secure-by-design patterns, risk reduction, and practical controls aligned to your
-              environment and constraints.
-            </p>
-            <ul class="bullets">
-              <li>Threat modeling & guardrails</li>
-              <li>Secrets, keys, and access reviews</li>
-              <li>Audit-ready documentation</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">📈</div>
-            <h3>Cost & Performance</h3>
-            <p class="muted">
-              Improve reliability and reduce spend by tuning usage, right-sizing workloads, and
-              removing waste.
-            </p>
-            <ul class="bullets">
-              <li>Cost baselining & FinOps dashboards</li>
-              <li>Right-sizing & scheduling</li>
-              <li>Architecture efficiency reviews</li>
+              <li><strong>Microsoft</strong> (M365, identity, devices)</li>
+              <li><strong>Google</strong> (Workspace, admin, security)</li>
+              <li><strong>AWS</strong> (hosting, networking, storage)</li>
             </ul>
           </article>
 
           <article class="card">
             <div class="card-icon" aria-hidden="true">🧩</div>
-            <h3>Bespoke Solutions</h3>
+            <h3>Custom Solutions</h3>
             <p class="muted">
-              Custom designs built around your business needs—after analysis, not guesswork.
+              Custom solutions built around your business needs—after discovery and analysis.
             </p>
             <ul class="bullets">
-              <li>Reference architecture + roadmap</li>
-              <li>Proof of concept to production</li>
-              <li>Documentation & handover</li>
+              <li>Workflow improvements</li>
+              <li>Integrations & automation</li>
+              <li>Network & device strategy</li>
+              <li>Modernization roadmaps</li>
             </ul>
           </article>
 
           <article class="card">
-            <div class="card-icon" aria-hidden="true">🔭</div>
-            <h3>Observability & Reliability</h3>
+            <div class="card-icon" aria-hidden="true">📡</div>
+            <h3>Monitoring</h3>
             <p class="muted">
-              Visibility you can trust: logs, metrics, traces, SLOs, and incident response
-              playbooks.
+              Equipment and in-office device monitoring—less downtime for you.
             </p>
             <ul class="bullets">
-              <li>Monitoring & alerting strategy</li>
-              <li>Dashboards & runbooks</li>
-              <li>On-call readiness</li>
+              <li>Device health & alerts</li>
+              <li>Internet/network monitoring</li>
+              <li>Proactive issue detection</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">💾</div>
+            <h3>Backups</h3>
+            <p class="muted">
+              Backup strategies that match your needs, recovery expectations, and budget.
+            </p>
+            <ul class="bullets">
+              <li>File & device backups</li>
+              <li>Cloud backup options</li>
+              <li>Recovery testing guidance</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🧠</div>
+            <h3>Technology Planning</h3>
+            <p class="muted">
+              Clear advice and an actionable plan—what to do now, next, and later.
+            </p>
+            <ul class="bullets">
+              <li>Office + remote workforce readiness</li>
+              <li>Security and access basics</li>
+              <li>Hardware lifecycle planning</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <!-- Approach -->
-      <section id="approach" class="container section">
+      <!-- Who we work with -->
+      <section id="who" class="container section">
+        <div class="section-head">
+          <h2>Who we work with</h2>
+          <p class="muted">
+            We cater to small and medium businesses—supporting both office-based teams and distributed, remote employees.
+          </p>
+        </div>
+
+        <div class="grid cards-2">
+          <article class="card">
+            <div class="kicker">Small & Medium Businesses</div>
+            <h3>Right-sized IT support</h3>
+            <p class="muted">
+              You get real help without enterprise overhead—clear scope, clear pricing, and dependable support.
+            </p>
+            <div class="mini-metrics">
+              <div><strong>SMB</strong><span class="muted">focused</span></div>
+              <div><strong>Fast</strong><span class="muted">response</span></div>
+              <div><strong>Clear</strong><span class="muted">scope</span></div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="kicker">Office + Remote</div>
+            <h3>Built for modern teams</h3>
+            <p class="muted">
+              We support companies with offices, remote staff, or both—covering devices, connectivity, access, and collaboration.
+            </p>
+            <div class="mini-metrics">
+              <div><strong>Office</strong><span class="muted">tech</span></div>
+              <div><strong>Remote</strong><span class="muted">workers</span></div>
+              <div><strong>Hybrid</strong><span class="muted">ready</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- How we work -->
+      <section id="how" class="container section">
         <div class="section-head">
           <h2>How we work</h2>
           <p class="muted">
-            A simple, proven approach: understand first, design second, deliver third—and
-            support what we ship.
+            Simple, transparent, and designed to fit your business. We start small, validate needs, then deliver.
           </p>
         </div>
 
@@ -292,15 +309,14 @@
           <div class="step">
             <div class="step-num">01</div>
             <div class="step-body">
-              <h3>Discovery & Analysis</h3>
+              <h3>Discovery Conversation</h3>
               <p class="muted">
-                We identify goals, constraints, risks, and success metrics. You’ll get a clear
-                plan, not a pile of tools.
+                A quick conversation to understand your goals, current setup, pain points, and timelines.
               </p>
               <div class="tags">
-                <span class="tag">workshops</span>
-                <span class="tag">current-state review</span>
-                <span class="tag">cost & risk baseline</span>
+                <span class="tag">goals</span>
+                <span class="tag">scope</span>
+                <span class="tag">constraints</span>
               </div>
             </div>
           </div>
@@ -308,31 +324,32 @@
           <div class="step">
             <div class="step-num">02</div>
             <div class="step-body">
-              <h3>Architecture & Design</h3>
+              <h3>Analysis</h3>
               <p class="muted">
-                We design a solution aligned to your needs—secure, scalable, and maintainable—
-                with practical tradeoffs documented.
+                We review what’s needed and what success looks like. If the scope requires it, this may include a site visit.
               </p>
               <div class="tags">
-                <span class="tag">reference architecture</span>
-                <span class="tag">IaC plan</span>
-                <span class="tag">security controls</span>
+                <span class="tag">assessment</span>
+                <span class="tag">site visit (if needed)</span>
+                <span class="tag">recommendations</span>
               </div>
+              <p class="muted small" style="margin-top:10px;">
+                Note: Some custom solution work may require paid analysis time depending on complexity and scope.
+              </p>
             </div>
           </div>
 
           <div class="step">
             <div class="step-num">03</div>
             <div class="step-body">
-              <h3>Build & Implement</h3>
+              <h3>Proposal</h3>
               <p class="muted">
-                We implement using automation and best practices. You get working systems,
-                tested and ready for production.
+                You receive an itemized proposal outlining the work, timeline, and estimated effort.
               </p>
               <div class="tags">
-                <span class="tag">CI/CD</span>
-                <span class="tag">Terraform</span>
-                <span class="tag">platform engineering</span>
+                <span class="tag">itemized scope</span>
+                <span class="tag">estimate</span>
+                <span class="tag">timeline</span>
               </div>
             </div>
           </div>
@@ -340,91 +357,26 @@
           <div class="step">
             <div class="step-num">04</div>
             <div class="step-body">
-              <h3>Operate & Improve</h3>
+              <h3>Pricing</h3>
               <p class="muted">
-                We help you run it: monitoring, documentation, and continuous improvements so
-                it stays reliable over time.
+                Pricing is based on the estimated work. Simple buildouts can often be fixed cost, while extended service and
+                support contracts are structured differently.
               </p>
               <div class="tags">
-                <span class="tag">observability</span>
-                <span class="tag">runbooks</span>
-                <span class="tag">optimization</span>
+                <span class="tag">fixed cost</span>
+                <span class="tag">support plans</span>
+                <span class="tag">transparent pricing</span>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- Case studies -->
-      <section id="case-studies" class="container section">
-        <div class="section-head">
-          <h2>Case studies</h2>
-          <p class="muted">Examples of outcomes we deliver. Replace these with your real wins.</p>
-        </div>
-
-        <div class="grid cards-2">
-          <article class="card">
-            <div class="kicker">Modernization</div>
-            <h3>Legacy to cloud-native platform</h3>
-            <p class="muted">
-              Re-architected a monolith into a modular platform with IaC, CI/CD, and observability.
-            </p>
-            <div class="mini-metrics">
-              <div><strong>4×</strong><span class="muted">deploy frequency</span></div>
-              <div><strong>↓40%</strong><span class="muted">incident volume</span></div>
-              <div><strong>↓25%</strong><span class="muted">cloud spend</span></div>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="kicker">Security</div>
-            <h3>Secure landing zone + guardrails</h3>
-            <p class="muted">
-              Implemented standardized cloud foundations with policies, access controls, and audit-ready documentation.
-            </p>
-            <div class="mini-metrics">
-              <div><strong>90d</strong><span class="muted">audit readiness</span></div>
-              <div><strong>0</strong><span class="muted">critical findings</span></div>
-              <div><strong>↑</strong><span class="muted">developer velocity</span></div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Security -->
-      <section id="security" class="container section">
-        <div class="section-head">
-          <h2>Security & reliability built in</h2>
-          <p class="muted">
-            Security isn’t an add-on. We build guardrails that help teams ship safely.
-          </p>
-        </div>
-
-        <div class="grid cards-3">
-          <article class="card subtle">
-            <h3>Principle of least privilege</h3>
-            <p class="muted">Role-based access, short-lived credentials, and regular reviews.</p>
-          </article>
-
-          <article class="card subtle">
-            <h3>Defense in depth</h3>
-            <p class="muted">Network segmentation, WAF patterns, and secure defaults.</p>
-          </article>
-
-          <article class="card subtle">
-            <h3>Audit-ready</h3>
-            <p class="muted">Traceability, change control, and documentation as a first-class output.</p>
-          </article>
-        </div>
 
         <div class="callout">
           <div>
-            <h3>Need a tailored solution?</h3>
-            <p class="muted">
-              Tell us your goals and constraints. We’ll propose a plan that fits your business and your team.
-            </p>
+            <h3>Ready to talk through your needs?</h3>
+            <p class="muted">We’ll start with a short discovery conversation and recommend next steps.</p>
           </div>
-          <a class="btn btn-primary" href="#contact">Start the conversation</a>
+          <a class="btn btn-primary" href="#contact">Contact Cloudstead Solutions</a>
         </div>
       </section>
 
@@ -432,28 +384,28 @@
       <section id="contact" class="container section">
         <div class="section-head">
           <h2>Contact</h2>
-          <p class="muted">Send a message and we’ll respond within 1 business day.</p>
+          <p class="muted">Send a message to our admin inbox and we’ll follow up.</p>
         </div>
 
         <div class="contact-grid">
           <div class="card">
-            <h3>Let’s build something resilient.</h3>
+            <h3>Cloudstead Solutions</h3>
             <p class="muted">
-              Share a quick overview and we’ll suggest next steps: discovery workshop, architecture review, or implementation plan.
+              Share what you need—office tech, cloud, monitoring, backups, or a custom solution—and we’ll respond with next steps.
             </p>
 
             <div class="contact-points">
-              <div class="contact-point"><span aria-hidden="true">✉</span> hello@cloudstead.example</div>
-              <div class="contact-point"><span aria-hidden="true">☎</span> (000) 000-0000</div>
-              <div class="contact-point"><span aria-hidden="true">⌁</span> Remote-first • US / Global</div>
+              <div class="contact-point"><span aria-hidden="true">✉</span> cloudsteadsolutions@gmail.com</div>
+              <div class="contact-point"><span aria-hidden="true">⌁</span> SMB focused • Office + Remote</div>
             </div>
 
             <div class="divider"></div>
 
             <div class="muted small">
-              Prefer a quick call? Use the button to draft an email with your preferred times.
+              Click below to draft an email with a pre-filled template to our admin Gmail.
             </div>
-            <a class="btn btn-secondary" id="emailBtn" href="#">Draft an email</a>
+
+            <a class="btn btn-secondary" id="emailBtn" href="#">Email our admin</a>
           </div>
 
           <form class="card form" onsubmit="return false;">
@@ -468,7 +420,7 @@
             </div>
 
             <div class="field">
-              <label for="company">Company</label>
+              <label for="company">Company (optional)</label>
               <input id="company" name="company" type="text" placeholder="Company name" autocomplete="organization" />
             </div>
 
@@ -478,14 +430,14 @@
                 id="message"
                 name="message"
                 rows="5"
-                placeholder="Example: We need an AWS landing zone, IaC, CI/CD, and monitoring for a new app..."
+                placeholder="Example: We need office cameras + door keypad access, plus Wi-Fi improvements and device monitoring..."
                 required
               ></textarea>
             </div>
 
-            <button class="btn btn-primary" id="fakeSubmit">Send message</button>
+            <button class="btn btn-primary" id="fakeSubmit">Generate email draft</button>
             <div class="muted small" id="formNote">
-              This is a static form UI. To receive submissions, connect Netlify Forms, Formspree, or a serverless endpoint.
+              This site is static. Click “Email our admin” to send details, or connect a form service later.
             </div>
           </form>
         </div>
@@ -494,7 +446,7 @@
 
     <footer class="footer">
       <div class="container footer-row">
-        <div class="muted small">© <span id="year"></span> Cloudstead. All rights reserved.</div>
+        <div class="muted small">© <span id="year"></span> Cloudstead Solutions. All rights reserved.</div>
         <div class="footer-links">
           <a href="#top">Back to top</a>
           <a href="#services">Services</a>
