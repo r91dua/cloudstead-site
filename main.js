@@ -21,20 +21,43 @@
     if (themeIcon) themeIcon.textContent = next === "light" ? "☀" : "☾";
   });
 
-  // Mobile menu
+  // Mobile menu (robust + accessible)
   const menuBtn = document.getElementById("menuBtn");
   const mobileNav = document.getElementById("mobileNav");
-  menuBtn?.addEventListener("click", () => {
-    const isHidden = mobileNav?.hasAttribute("hidden");
-    if (!mobileNav) return;
-    if (isHidden) mobileNav.removeAttribute("hidden");
-    else mobileNav.setAttribute("hidden", "");
-  });
 
-  // Close mobile nav on click
-  mobileNav?.querySelectorAll("a").forEach((a) => {
-    a.addEventListener("click", () => mobileNav.setAttribute("hidden", ""));
-  });
+  if (menuBtn && mobileNav) {
+    // Ensure a known initial state (closed)
+    mobileNav.setAttribute("hidden", "");
+    menuBtn.setAttribute("aria-expanded", "false");
+
+    menuBtn.addEventListener("click", () => {
+      const isOpen = !mobileNav.hasAttribute("hidden");
+
+      if (isOpen) {
+        mobileNav.setAttribute("hidden", "");
+        menuBtn.setAttribute("aria-expanded", "false");
+      } else {
+        mobileNav.removeAttribute("hidden");
+        menuBtn.setAttribute("aria-expanded", "true");
+      }
+    });
+
+    // Close mobile nav after clicking a link
+    mobileNav.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => {
+        mobileNav.setAttribute("hidden", "");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Optional: close on Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        mobileNav.setAttribute("hidden", "");
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
 
   // Fake submit (static)
   const fakeSubmit = document.getElementById("fakeSubmit");
@@ -42,18 +65,22 @@
   fakeSubmit?.addEventListener("click", () => {
     if (!formNote) return;
     formNote.textContent =
-      "Thanks! This demo form is static. Plug in Netlify Forms, Formspree, or a serverless endpoint to receive messages.";
+      "Thanks! This site is static. Click “Email our admin” to send details, or connect a form service later (Netlify Forms, Formspree, or a serverless endpoint).";
   });
 
-  // Draft email button
+  // Draft email button (admin Gmail template)
   const emailBtn = document.getElementById("emailBtn");
   emailBtn?.addEventListener("click", (e) => {
     e.preventDefault();
 
-   const adminEmail = "cloudsteadsolutions@gmail.com";
+    // ✅ CHANGE THIS to your real admin Gmail if different:
+    const adminEmail = "cloudsteadsolutions@gmail.com";
 
-  const subject = encodeURIComponent("Cloudstead Solutions — Discovery Conversation Request");
-  const body = encodeURIComponent(
+    const subject = encodeURIComponent(
+      "Cloudstead Solutions — Discovery Conversation Request"
+    );
+
+    const body = encodeURIComponent(
 `Hi Cloudstead Solutions team,
 
 I’d like to start a discovery conversation.
@@ -70,8 +97,8 @@ Preferred contact method:
 
 Thanks,
 `
-  );
+    );
 
-  window.location.href = `mailto:${adminEmail}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${adminEmail}?subject=${subject}&body=${body}`;
   });
 })();
