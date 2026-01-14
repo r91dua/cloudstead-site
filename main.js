@@ -50,12 +50,28 @@
   emailBtn?.addEventListener("click", (e) => {
     e.preventDefault();
 
-    const subject = encodeURIComponent("Cloudstead — Discovery Call Request");
-    const body = encodeURIComponent(
-      `Hi Cloudstead team,\n\nI'd like to schedule a discovery call. Here’s what we’re trying to accomplish:\n- \n\nPreferred times:\n- \n\nThanks,\n`
-    );
+   const adminEmail = "cloudsteadsolutions@gmail.com";
 
-    // Replace with your real email:
-    window.location.href = `mailto:hello@cloudstead.example?subject=${subject}&body=${body}`;
+  const subject = encodeURIComponent("Cloudstead Solutions — Discovery Conversation Request");
+  const body = encodeURIComponent(
+`Hi Cloudstead Solutions team,
+
+I’d like to start a discovery conversation.
+
+Business name:
+Primary location (if office-based):
+Number of employees (office / remote):
+What we need help with (in-office / cloud / monitoring / backups / custom):
+Timeline:
+Any current issues or constraints:
+
+Best times to contact me:
+Preferred contact method:
+
+Thanks,
+`
+  );
+
+  window.location.href = `mailto:${adminEmail}?subject=${subject}&body=${body}`;
   });
 })();
